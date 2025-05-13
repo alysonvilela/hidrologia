@@ -2,8 +2,14 @@
   "name": "hidrologia",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "dev": "bun run --watch index.ts",
+    "build": "bun build index.ts --outfile=dist/index.js"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
